@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('marblee.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover; /* Using cover to ensure the image covers the entire background */
+     }
+
+    .container{  /*Container for 5 products*/
+      position: relative;
+      top: 100px;
+      left: 220px;
+      margin-bottom: 60px;
+    }
+    .productBorder{ /*Border for image*/
+      display: inline-block;
+      vertical-align: top;
+      height: 340px;
+      width: 230px;
+      border-style: solid;
+      border-color: black;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px;;
+      transition: 0.5s;
+    }
+    img{ /*Image*/
+      height: 270px;
+      width: 230px;
+      object-fit: cover;
+      border-bottom: 2px solid black;
+    }
+    .product{ /*Product Name*/
+      margin: 10px 0px 0px 0px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      object-position: bottom ;
+      padding: 0px 8px 0px 8px;
+    }
+    .hoodie:hover{ /*Hover for Product*/
+      transform: scale(110%);
+      color: rgb(144, 142, 142);
+    }
+    a{ /*Style for link*/
+      text-decoration: none;
+      color: black
+    }
+    /* Base button style */
+     .radioB{ /*Style for Buttons*/
+      margin-top: 50px;
+      margin-right: 5px;
+      border-style: 1px solid black;
+    }
+    /*For buttons and sorting*/
+    #hoodieB:checked ~ #jackie{
+      display: none;
+    }
+    #hoodieB:checked ~ #pantsy{
+      display: none;
+    }  
+    #jackieB:checked ~ #hoodi{
+      display:none;
+    }
+    #jackieB:checked ~ #pantsy{
+      display: none;
+    }  
+    #pantB:checked ~ #hoodi{
+      display:none;
+    }
+    #pantB:checked ~ #jackie{
+      display:none;
+    }
+
+
+/* Checked state styles for radio buttons */
+#hoodieB:checked ~ #jackie,
+#hoodieB:checked ~ #pantsy,
+#jackieB:checked ~ #hoodi,
+#jackieB:checked ~ #pantsy,
+#pantB:checked ~ #hoodi,
+#pantB:checked ~ #jackie {
+  display: none;
+}
+
+
+    
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <center><title> Hunter.Mnla </title></center>
+<body>
+    <font color = "Black" size ="50" style ="Cascadia Mono"> <b><center> Hunter.Mnla </center></b></font>
+    <!--Radio Buttons for Sorting-->
+    <font face="Roboto, sans-serif" size="4" color="#333">
+    <input type="radio" id="all" name="sort" checked class="radioB">
+    <label for="all">All</label>
+    
+    <input type="radio" id="hoodieB" name="sort" class="radioB">
+    <label for="hoodieB">Hoodies</label>
+
+    <input type="radio" id="jackieB" name="sort" class="radioB">
+    <label for="jackieB">Jackets</label>
+
+    <input type="radio" id="pantB" name="sort" class="radioB">
+    <label for="pantB">Pants</label>
+
+  <!--Hoodies-->
+  <div class="container" id="hoodi">  <!--Groups the 5 products for placement-->
+
+    <p class="category">Hoodies</p>
+
+    <!--1st Hoodie-->  
+    <a href="https://www.instagram.com/p/CxQNgzehZ0q/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target=_blank>
+      <div class="productBorder">
+        <img src="hblue.jpg"> <!--image source-->
+        <center><p class="product"> Vintage Royal Blue Russell Athletic Boxy Hoodie </p></center> <!--Product Name-->
+      </div>
+    </a>
+
+    <!--2nd Hoodie-->
+    <a href="https://www.instagram.com/p/CyYRgs8h_PY/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target=_blank>
+      <div class="productBorder">
+        <img src="hoods.jpg"><!--image source-->
+        <center><p class="product"> Vintage Faded Black Russell Athletic Boxy Hoodie </p></center><!--Product Name-->
+      </div>
+    </a>
+
+    <!--3rd Hoodie-->
+    <a href="https://www.instagram.com/p/CyYRxDnhIgx/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target=_blank>
+      <div class="productBorder">
+        <img src="black.jpg"><!--image source-->
+        <center><p class="product"> Vintage Black Russell Athletic Boxy Hoodie </p></center><!--Product Name-->
+      </div>
+    </a>
+
+    <!--4th Hoodie-->
+    <a href="https://www.instagram.com/p/CyYRoIfhf4c/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target=_blank>
+      <div class="productBorder">
+      <img src="beige.jpg"><!--image source-->
+        <center><p class="product"> Beige Russell Athletic Boxy Hoodie </p></center><!--Product Name-->
+    </div>
+  </a>
+
+  <!--5th Hoodie-->
+    <a href="https://www.instagram.com/p/CvmnuwthMj5/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target=_blank>
+      <div class="productBorder">
+        <img src="olive.jpg"><!--image source-->
+      <center><p class="product"> Vintage Faded Army Green Russell Athletic Boxy Hoodie </p></center><!--Product Name-->
+      </div>
+  </a>
+  
+  </div>
+  <!--Jackets-->
+  <div class="container" id="jackie">
+
+    <p class="category">Jackets</p>
+    
+    <!--1st Jacket-->
+    <a href="https://www.instagram.com/p/CxQPsu-hBpy/?img_index=1" target="_blank">
+      <div class="productBorder">
+        <img src="jacked.jpg"> <!--image source-->
+        <center><p class="product"> Carhartt Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--2nd Jacket-->
+    <a href="https://www.instagram.com/p/CxQPNWTh7lg/?img_index=1" target="_blank">
+      <div class="productBorder">
+        <img src="jacked2.jpg"> <!--image source-->
+        <center><p class="product"> Brown Detroit Hooded Carhartt Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--3rd Jacket-->
+    <a href="https://www.instagram.com/p/CuwjAu_hxI7/?img_index=1" target="_blank">
+      <div class="productBorder">
+        <img src="jacked3.jpg"> <!--image source-->
+        <center><p class="product"> Vintage Moss Green Detroit Hooded Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--4th Jacket-->
+    <a href="https://www.instagram.com/p/Cuwi7mfhV9Q/?img_index=1" target="_blank">
+      <div class="productBorder">
+        <img src="jacked4.jpg"> <!--image source-->
+        <center><p class="product"> Vintage Faded Black Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--5th Jacket-->
+    <a href="https://www.instagram.com/p/Cuwi162hDWY/?img_index=1" target="_blank">
+      <div class="productBorder">
+        <img src="jacked5.jpg"> <!--image source-->
+        <center><p class="product"> Black Carhartt Detroit Hooded Jacket 
+    </a>
+  </div>
+ 
+ 
+  <!--Pants-->
+  <div class="container" id="pantsy">
+
+    <p class="category">Pants</p>
+
+    <!--1st Pant-->
+    <a>
+      <div class="productBorder">
+        <img src=""> <!--image source-->
+        <center><p class="product"> Carhartt Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--2nd Pant-->
+    <a>
+      <div class="productBorder">
+        <img src=""> <!--image source-->
+        <center><p class="product"> Carhartt Hooded Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--3rd Pant-->
+    <a>
+      <div class="productBorder">
+        <img src=""> <!--image source-->
+        <center><p class="product"> Carhartt Hooded Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--4th Pant-->
+    <a>
+      <div class="productBorder">
+        <img src=""> <!--image source-->
+        <center><p class="product"> Carhartt Hooded Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+    <!--5th Pant-->
+    <a>
+      <div class="productBorder">
+        <img src=""> <!--image source-->
+        <center><p class="product"> Carhartt Hooded Detroit Jacket </p></center> <!--Product Name-->
+      </div>
+    </a>
+  </div>
+</body>
+
+</html>
